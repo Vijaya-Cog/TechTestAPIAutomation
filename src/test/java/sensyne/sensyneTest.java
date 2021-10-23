@@ -11,14 +11,8 @@ class sensyneTest {
     void testParallel() {
         Results results = Runner.path("classpath:sensyne")
                 //.outputCucumberJson(true)
+              //  .tags("@debug")
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
-
-    @Karate.Test
-    Karate testTags() {
-        return Karate.run("tags").tags("@debug").relativeTo(getClass());
-    }
-
-
 }

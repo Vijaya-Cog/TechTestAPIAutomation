@@ -1,11 +1,20 @@
+
 Feature: Test GET products API
  
-  Background:
-    * url 'http://localhost:5000/v1/'
+Background: Preconditions
+  Given url apiUrl
 
-  
-  Scenario: Get all products
+ 
+  Scenario: Get all products schema validation
     Given path 'products'
     When method GET
     Then status 200
+    And match each response ==
+    """   
+      {
+          "name": "#string", 
+          "id": '#number',
+          "price": "#string"    
+      }
+    """
  

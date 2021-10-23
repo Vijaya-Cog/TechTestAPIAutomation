@@ -5,8 +5,8 @@ function fn() {
     env = 'dev';
   }
   var config = {
-    env: env,
-    myVarName: 'someValue'
+ 
+    apiUrl: 'http://localhost:5000/v1/'
   }
   if (env == 'dev') {
     // customize

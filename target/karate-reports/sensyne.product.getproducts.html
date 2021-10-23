@@ -30,13 +30,13 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-10-22 04:02:10 pm</div>
+    <div>2021-10-23 09:32:41 pm</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:7]"><span>[1:7]</span> <span>Get all products</span></a>
+            <a href="#[1:8]"><span>[1:8]</span> <span>Get all products schema validation</span></a>
           </div>
         </div>
       </div>
@@ -50,42 +50,42 @@
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:7]">
+          <div class="scenario-heading" id="[1:8]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:7]</span>
-                <span class="scenario-name">Get all products</span>
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Get all products schema validation</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>479</span>
+              <span>ms:</span>&nbsp;<span>105</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:7]bg">
+            <div class="step-container" id="[1:8]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:7]bg"><div>
+          <div data-parent="[1:8]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;http://localhost:5000/v1/&#39;</span>
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -94,7 +94,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">16:02:08.867 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.5">21:32:39.767 karate.env system property was: null 
 </div>   
 
   
@@ -107,8 +107,8 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.8">
-      <div class="step-ref passed">8</div>
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;products&#39;</span>
@@ -135,14 +135,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">477</div>
+    <div class="time-cell passed">76</div>
   </div>
 
    
@@ -151,7 +151,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.9">16:02:09.319 request:
+  <div class="preformatted" data-parent="0.10">21:32:39.772 request:
 1 &gt; GET http://localhost:5000/v1/products
 1 &gt; Host: localhost:5000
 1 &gt; Connection: Keep-Alive
@@ -159,87 +159,17 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:02:09.398 response time in milliseconds: 76
+21:32:39.842 response time in milliseconds: 68
 1 &lt; 200
-1 &lt; Content-Length: 2851
+1 &lt; Content-Length: 2394
 1 &lt; Content-Type: application/json
-1 &lt; Date: Fri, 22 Oct 2021 15:02:09 GMT
+1 &lt; Date: Sat, 23 Oct 2021 20:32:39 GMT
 1 &lt; Server: waitress
 [
   {
-    &quot;id&quot;: 2,
-    &quot;name&quot;: &quot;Personalised cufflinks&quot;,
-    &quot;price&quot;: &quot;45.00&quot;
-  },
-  {
-    &quot;id&quot;: 3,
-    &quot;name&quot;: &quot;Kids T-shirt&quot;,
-    &quot;price&quot;: &quot;19.95&quot;
-  },
-  {
-    &quot;id&quot;: 5,
-    &quot;name&quot;: &quot;Jasmine&quot;,
-    &quot;price&quot;: &quot;9.25&quot;
-  },
-  {
-    &quot;id&quot;: 7,
-    &quot;name&quot;: &quot;Lilly&quot;,
-    &quot;price&quot;: &quot;9.25&quot;
-  },
-  {
-    &quot;id&quot;: 8,
-    &quot;name&quot;: &quot;Lilly4&quot;,
-    &quot;price&quot;: &quot;15.00&quot;
-  },
-  {
-    &quot;id&quot;: 9,
-    &quot;name&quot;: &quot;Rose&quot;,
-    &quot;price&quot;: &quot;19.25&quot;
-  },
-  {
-    &quot;id&quot;: 10,
-    &quot;name&quot;: &quot;Tulips&quot;,
-    &quot;price&quot;: &quot;10.51&quot;
-  },
-  {
-    &quot;id&quot;: 11,
-    &quot;name&quot;: &quot;Daffodils&quot;,
-    &quot;price&quot;: &quot;9.25&quot;
-  },
-  {
-    &quot;id&quot;: 12,
-    &quot;name&quot;: &quot;primrose&quot;,
-    &quot;price&quot;: &quot;9.25&quot;
-  },
-  {
-    &quot;id&quot;: 13,
-    &quot;name&quot;: &quot;Office chair&quot;,
-    &quot;price&quot;: &quot;60.25&quot;
-  },
-  {
-    &quot;id&quot;: 14,
-    &quot;name&quot;: &quot;Office chair&quot;,
-    &quot;price&quot;: &quot;60.25&quot;
-  },
-  {
-    &quot;id&quot;: 15,
-    &quot;name&quot;: &quot;Hanging heart&quot;,
-    &quot;price&quot;: &quot;9.25&quot;
-  },
-  {
-    &quot;id&quot;: 16,
-    &quot;name&quot;: &quot;Office chair&quot;,
-    &quot;price&quot;: &quot;60.25&quot;
-  },
-  {
-    &quot;id&quot;: 17,
-    &quot;name&quot;: &quot;Hanging wall&quot;,
-    &quot;price&quot;: &quot;9.25&quot;
-  },
-  {
     &quot;id&quot;: 18,
-    &quot;name&quot;: &quot;Hanging Mat&quot;,
-    &quot;price&quot;: &quot;9.25&quot;
+    &quot;name&quot;: &quot;Television&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
   },
   {
     &quot;id&quot;: 19,
@@ -322,59 +252,99 @@
     &quot;price&quot;: &quot;60.25&quot;
   },
   {
-    &quot;id&quot;: 35,
-    &quot;name&quot;: &quot;sofa&quot;,
-    &quot;price&quot;: &quot;50.25&quot;
-  },
-  {
-    &quot;id&quot;: 36,
-    &quot;name&quot;: &quot;bean bag&quot;,
-    &quot;price&quot;: &quot;60.25&quot;
-  },
-  {
     &quot;id&quot;: 37,
-    &quot;name&quot;: &quot;sofa&quot;,
-    &quot;price&quot;: &quot;50.25&quot;
+    &quot;name&quot;: &quot;basket&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
   },
   {
     &quot;id&quot;: 38,
-    &quot;name&quot;: &quot;sofa&quot;,
-    &quot;price&quot;: &quot;50.25&quot;
+    &quot;name&quot;: &quot;tele&quot;,
+    &quot;price&quot;: &quot;78.00&quot;
   },
   {
     &quot;id&quot;: 39,
-    &quot;name&quot;: &quot;bean bag&quot;,
-    &quot;price&quot;: &quot;60.25&quot;
-  },
-  {
-    &quot;id&quot;: 40,
-    &quot;name&quot;: &quot;bean bag&quot;,
-    &quot;price&quot;: &quot;60.25&quot;
+    &quot;name&quot;: &quot;tele&quot;,
+    &quot;price&quot;: &quot;21.00&quot;
   },
   {
     &quot;id&quot;: 41,
-    &quot;name&quot;: &quot;sofa&quot;,
-    &quot;price&quot;: &quot;50.25&quot;
+    &quot;name&quot;: &quot;qweqw&quot;,
+    &quot;price&quot;: &quot;23.00&quot;
   },
   {
     &quot;id&quot;: 42,
-    &quot;name&quot;: &quot;bean bag&quot;,
-    &quot;price&quot;: &quot;60.25&quot;
+    &quot;name&quot;: &quot;&quot;,
+    &quot;price&quot;: &quot;23.00&quot;
   },
   {
     &quot;id&quot;: 43,
-    &quot;name&quot;: &quot;sofa&quot;,
-    &quot;price&quot;: &quot;50.25&quot;
+    &quot;name&quot;: &quot;&quot;,
+    &quot;price&quot;: &quot;23.00&quot;
   },
   {
     &quot;id&quot;: 44,
-    &quot;name&quot;: &quot;sofa&quot;,
-    &quot;price&quot;: &quot;50.25&quot;
+    &quot;name&quot;: &quot;&quot;,
+    &quot;price&quot;: &quot;23.00&quot;
   },
   {
     &quot;id&quot;: 45,
-    &quot;name&quot;: &quot;bean bag&quot;,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 46,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 47,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 48,
+    &quot;name&quot;: &quot;Laptop&quot;,
     &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 49,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 50,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 51,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 52,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 53,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 54,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 55,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 56,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
   }
 ]
 
@@ -390,8 +360,8 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -403,6 +373,38 @@
    
   
   
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.12">{
+          &quot;name&quot;: &quot;#string&quot;, 
+          &quot;id&quot;: &#39;#number&#39;,
+          &quot;price&quot;: &quot;#string&quot;    
+      }</div>
 
   
 
