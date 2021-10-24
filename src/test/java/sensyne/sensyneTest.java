@@ -12,7 +12,7 @@ class sensyneTest {
         Results results = Runner.path("classpath:sensyne")
                 //.outputCucumberJson(true)
               //  .tags("@debug")
-                .parallel(5);
+               .parallel(0);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 }

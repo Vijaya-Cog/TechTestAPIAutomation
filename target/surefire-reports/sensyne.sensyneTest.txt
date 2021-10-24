@@ -1,17 +1,11 @@
 -------------------------------------------------------------------------------
 Test set: sensyne.sensyneTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.53 s <<< FAILURE! - in sensyne.sensyneTest
-testParallel  Time elapsed: 4.517 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.763 s <<< FAILURE! - in sensyne.sensyneTest
+testParallel  Time elapsed: 5.751 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
-status code was: 404, expected: 200, response time in milliseconds: 81, url: http://localhost:5000/v1/product/5, response: 
-{
-  "detail": "The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.",
-  "status": 404,
-  "title": "Not Found",
-  "type": "about:blank"
-}
+status code was: 204, expected: 404, response time in milliseconds: 31, url: http://localhost:5000/v1/product, response: 
 
-classpath:sensyne/product/getaproduct.feature:12 ==> expected: <0> but was: <1>
+classpath:sensyne/product/Test_01postproduct.feature:91 ==> expected: <0> but was: <1>
 	at sensyne.sensyneTest.testParallel(sensyneTest.java:16)
 

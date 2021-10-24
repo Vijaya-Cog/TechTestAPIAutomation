@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>sensyne.product.Test_02getproducts</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-10-24 01:49:51 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Get all products and perform schema validation</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">sensyne/product/Test_02getproducts.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test GET products API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Get all products and perform schema validation</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>129</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url apiUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">13:49:51.281 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;products&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">35</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">13:49:51.285 request:
+1 &gt; GET http://localhost:5000/v1/products
+1 &gt; Host: localhost:5000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.8)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:49:51.317 response time in milliseconds: 30
+1 &lt; 200
+1 &lt; Content-Length: 5359
+1 &lt; Content-Type: application/json
+1 &lt; Date: Sun, 24 Oct 2021 12:49:51 GMT
+1 &lt; Server: waitress
+[
+  {
+    &quot;id&quot;: 27,
+    &quot;name&quot;: &quot;air cushion&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 28,
+    &quot;name&quot;: &quot;sofa&quot;,
+    &quot;price&quot;: &quot;50.25&quot;
+  },
+  {
+    &quot;id&quot;: 29,
+    &quot;name&quot;: &quot;bean bag&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 30,
+    &quot;name&quot;: &quot;extra large&quot;,
+    &quot;price&quot;: &quot;9.25&quot;
+  },
+  {
+    &quot;id&quot;: 31,
+    &quot;name&quot;: &quot;tele&quot;,
+    &quot;price&quot;: &quot;50.25&quot;
+  },
+  {
+    &quot;id&quot;: 32,
+    &quot;name&quot;: &quot;sofa&quot;,
+    &quot;price&quot;: &quot;50.25&quot;
+  },
+  {
+    &quot;id&quot;: 33,
+    &quot;name&quot;: &quot;bean bag&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 34,
+    &quot;name&quot;: &quot;bean bag&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 37,
+    &quot;name&quot;: &quot;basket&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 38,
+    &quot;name&quot;: &quot;tele&quot;,
+    &quot;price&quot;: &quot;78.00&quot;
+  },
+  {
+    &quot;id&quot;: 39,
+    &quot;name&quot;: &quot;tele&quot;,
+    &quot;price&quot;: &quot;21.00&quot;
+  },
+  {
+    &quot;id&quot;: 41,
+    &quot;name&quot;: &quot;qweqw&quot;,
+    &quot;price&quot;: &quot;23.00&quot;
+  },
+  {
+    &quot;id&quot;: 42,
+    &quot;name&quot;: &quot;&quot;,
+    &quot;price&quot;: &quot;23.00&quot;
+  },
+  {
+    &quot;id&quot;: 43,
+    &quot;name&quot;: &quot;&quot;,
+    &quot;price&quot;: &quot;23.00&quot;
+  },
+  {
+    &quot;id&quot;: 44,
+    &quot;name&quot;: &quot;&quot;,
+    &quot;price&quot;: &quot;23.00&quot;
+  },
+  {
+    &quot;id&quot;: 45,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 46,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 47,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 48,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 49,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 50,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 51,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 52,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 53,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 54,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 55,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 56,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 57,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 58,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 59,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 60,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 61,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 62,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 63,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 64,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 65,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 66,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 67,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 68,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 69,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 70,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 71,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 72,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 73,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 74,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 75,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 76,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 77,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 78,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 79,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 80,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 81,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 82,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 83,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 84,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 85,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 86,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 87,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 88,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 89,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 90,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 91,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 92,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 93,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 94,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 95,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 96,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 97,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 98,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 99,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 100,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 101,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 102,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 103,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 104,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  },
+  {
+    &quot;id&quot;: 105,
+    &quot;name&quot;: &quot;chair&quot;,
+    &quot;price&quot;: &quot;35.00&quot;
+  },
+  {
+    &quot;id&quot;: 106,
+    &quot;name&quot;: &quot;laptop&quot;,
+    &quot;price&quot;: &quot;25.00&quot;
+  },
+  {
+    &quot;id&quot;: 107,
+    &quot;name&quot;: &quot;cpu&quot;,
+    &quot;price&quot;: &quot;15.00&quot;
+  },
+  {
+    &quot;id&quot;: 108,
+    &quot;name&quot;: &quot;wireless mouse&quot;,
+    &quot;price&quot;: &quot;12.00&quot;
+  },
+  {
+    &quot;id&quot;: 109,
+    &quot;name&quot;: &quot;fan&quot;,
+    &quot;price&quot;: &quot;45.00&quot;
+  },
+  {
+    &quot;id&quot;: 110,
+    &quot;name&quot;: &quot;Laptop&quot;,
+    &quot;price&quot;: &quot;60.25&quot;
+  }
+]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match each response ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">93</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.12">{
+          &quot;name&quot;: &quot;#string&quot;, 
+          &quot;id&quot;: &#39;#number&#39;,
+          &quot;price&quot;: &quot;#string&quot;    
+      }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

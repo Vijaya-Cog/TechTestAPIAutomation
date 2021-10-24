@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"sensyne\/product\/Test_04getaproduct[1:9]","start":1635079791933,"end":1635079791982,"title":"sensyne\/product\/Test_04getaproduct[1:9] 13:49:51.933-13:49:51.982 Get a product and perform schema validation"},{"id":2,"group":1,"content":"sensyne\/product\/Test_04getaproduct[2:31]","start":1635079791987,"end":1635079792012,"title":"sensyne\/product\/Test_04getaproduct[2:31] 13:49:51.987-13:49:52.012 Get a product which does not exist"},{"id":3,"group":1,"content":"sensyne\/product\/Test_04getaproduct[3:38]","start":1635079792016,"end":1635079792067,"title":"sensyne\/product\/Test_04getaproduct[3:38] 13:49:52.016-13:49:52.067 Get a product which does not exist"},{"id":4,"group":1,"content":"sensyne\/product\/Test_01postproduct[1.1:23]","start":1635079789160,"end":1635079789902,"title":"sensyne\/product\/Test_01postproduct[1.1:23] 13:49:49.160-13:49:49.902 Post a product"},{"id":5,"group":1,"content":"sensyne\/product\/Test_01postproduct[1.2:24]","start":1635079789914,"end":1635079789945,"title":"sensyne\/product\/Test_01postproduct[1.2:24] 13:49:49.914-13:49:49.945 Post a product"},{"id":6,"group":1,"content":"sensyne\/product\/Test_01postproduct[1.3:25]","start":1635079789952,"end":1635079789984,"title":"sensyne\/product\/Test_01postproduct[1.3:25] 13:49:49.952-13:49:49.984 Post a product"},{"id":7,"group":1,"content":"sensyne\/product\/Test_01postproduct[1.4:26]","start":1635079789994,"end":1635079790024,"title":"sensyne\/product\/Test_01postproduct[1.4:26] 13:49:49.994-13:49:50.024 Post a product"},{"id":8,"group":1,"content":"sensyne\/product\/Test_01postproduct[1.5:27]","start":1635079790034,"end":1635079790076,"title":"sensyne\/product\/Test_01postproduct[1.5:27] 13:49:50.034-13:49:50.076 Post a product"},{"id":9,"group":1,"content":"sensyne\/product\/Test_01postproduct[2:31]","start":1635079790087,"end":1635079790147,"title":"sensyne\/product\/Test_01postproduct[2:31] 13:49:50.087-13:49:50.147 Error message validation when price is not provided"},{"id":10,"group":1,"content":"sensyne\/product\/Test_01postproduct[3:46]","start":1635079790153,"end":1635079790184,"title":"sensyne\/product\/Test_01postproduct[3:46] 13:49:50.153-13:49:50.184 Error message validation when name is not provided"},{"id":11,"group":1,"content":"sensyne\/product\/Test_01postproduct[4:61]","start":1635079790193,"end":1635079790225,"title":"sensyne\/product\/Test_01postproduct[4:61] 13:49:50.193-13:49:50.225 Error message validation when price is not a number"},{"id":12,"group":1,"content":"sensyne\/product\/Test_01postproduct[5:80]","start":1635079790232,"end":1635079790274,"title":"sensyne\/product\/Test_01postproduct[5:80] 13:49:50.232-13:49:50.274 Post a product by providing the optional product code","className":"failed"},{"id":13,"group":1,"content":"sensyne\/product\/Test_02getproducts[1:8]","start":1635079791277,"end":1635079791411,"title":"sensyne\/product\/Test_02getproducts[1:8] 13:49:51.277-13:49:51.411 Get all products and perform schema validation"},{"id":14,"group":1,"content":"sensyne\/product\/Test_03updateproduct[1.1:36]","start":1635079791543,"end":1635079791712,"title":"sensyne\/product\/Test_03updateproduct[1.1:36] 13:49:51.543-13:49:51.712 Update a product and validate if the update was successful using GET method"},{"id":15,"group":1,"content":"sensyne\/product\/Test_03updateproduct[2.1:56]","start":1635079791720,"end":1635079791777,"title":"sensyne\/product\/Test_03updateproduct[2.1:56] 13:49:51.720-13:49:51.777 Update a product an invalid product and validate error code"},{"id":16,"group":1,"content":"sensyne\/product\/Test_05deleteaproduct[1:7]","start":1635079792272,"end":1635079792530,"title":"sensyne\/product\/Test_05deleteaproduct[1:7] 13:49:52.272-13:49:52.530 Delete a product"},{"id":17,"group":1,"content":"sensyne\/product\/Test_05deleteaproduct[2:23]","start":1635079792536,"end":1635079792567,"title":"sensyne\/product\/Test_05deleteaproduct[2:23] 13:49:52.536-13:49:52.567 Validating the error message of a already Deleted product"},{"id":18,"group":1,"content":"sensyne\/product\/Test_05deleteaproduct[3:29]","start":1635079792573,"end":1635079792597,"title":"sensyne\/product\/Test_05deleteaproduct[3:29] 13:49:52.573-13:49:52.597 Validating the error message of an invalid product"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
